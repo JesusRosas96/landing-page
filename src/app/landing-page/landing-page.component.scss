@@ -1,0 +1,212 @@
+.main-container {
+    max-width: 1005px;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+}
+
+header .logo img {
+    width: 180px;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    overflow: hidden;    
+    margin: 0 auto 0;
+    max-width: 600px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    float: left;
+    font-size: 1.25em;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+.main-container {
+    color: black;
+
+    > .info {
+        text-align: center;
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.2em;
+            font-weight: 600;
+            max-width: 500px;
+            line-height: 1.8em;
+            margin: 2em auto;
+        }
+
+        p:before {
+            content: "";
+            display: block;
+            width: 120px;
+            border: 2px solid #E13838;
+            margin: 1em auto;
+        }
+
+        a {
+            background: #E13838;
+            padding: 1em 3em;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.37em;
+            font-weight: 700;
+        }
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    figure img {
+        margin: 3em auto 0;
+        width: 300px;
+    }
+}
+
+nav .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+nav .dropdown .dropbtn {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: black;
+    text-decoration: none;
+    background-color: inherit;
+    margin: 0;
+}
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: paleturquoise;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 1em 3em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav .dropdown-content a:hover {
+    background-color: cornflowerblue;
+}
+  
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (min-width: 820px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: center;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0.5em 2em;
+    }
+
+    nav ul li a {
+        font-size: 1.375em;
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    nav .highlight {
+        border: 3px solid #E13838;
+        border-radius: 50px;
+    }
+
+    nav .dropdown .dropbtn {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.375em;
+        text-align: center;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        color: black;
+        text-decoration: none;
+        background-color: inherit;
+        margin: 0;
+        padding: 0.4em 1.5em 0.5em 0;
+    }
+
+    main {
+        flex-flow: row;
+    }
+
+    main .info {
+        text-align: left;
+    }
+
+    main .info h1 {
+        font-size: 4em
+    }
+
+    main .info p:before {
+        margin: 1em 0;
+    }
+
+    main .info p {
+        font-size: 1.3em;
+        padding: 0;
+        margin: 0 0 3em 0;
+    }
+
+    main figure img {
+        width: 300px;
+        margin: 0;
+    }
+}
